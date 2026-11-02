@@ -1,0 +1,19 @@
+# R / RStudio
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+*.Rproj
+
+# Shiny / runtime
+rsconnect/
+opera_run_*/
+*.log
+
+# OPERA scratch output
+opera_out.csv
+input.smi
+
+# OS
+.DS_Store
+Thumbs.db
