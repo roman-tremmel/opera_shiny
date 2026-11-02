@@ -31,8 +31,9 @@ EXAMPLE_SMILES <- paste(
 # ---- UI --------------------------------------------------------------------
 ui <- page_sidebar(
   title = tagList(bsicons::bs_icon("capsule-pill"), "OPERA ADME Predictor"),
-  theme = bs_theme(version = 5, preset = "flatly",
-                   primary = "#2C6E8F", base_font = font_google("Inter")),
+  # Bootstrap 5 default (system) fonts only -- no Google Fonts fetch, so the
+  # app renders in offline / restricted-network environments.
+  theme = bs_theme(version = 5, primary = "#2C6E8F"),
   window_title = "OPERA ADME Predictor",
 
   sidebar = sidebar(
